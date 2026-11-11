@@ -1,0 +1,73 @@
+.intech-dashboard{display:grid;gap:14px;color:#153047}.dash-toolbar,.dash-toolbar>div,.dash-period-button,.dash-panel-head,.dash-breakdown-body,.dash-legend>div,.dash-device-list>div,.dash-day-list button,.dash-day-detail button{display:flex;align-items:center}.dash-toolbar{justify-content:space-between;gap:16px}.dash-toolbar p{margin:0;color:#8aa0b0;font-size:12px}.dash-toolbar>div{gap:8px}.dash-refresh,.dash-period-button{height:40px;border:1px solid #dfe9ef;border-radius:8px;background:#fff;color:#345269;cursor:pointer}.dash-refresh{width:40px;display:grid;place-items:center}.dash-period-button{gap:18px;justify-content:space-between;min-width:155px;padding:0 13px;font:500 14px 'Work Sans',sans-serif}.dash-filter-wrap{position:relative}.dash-filter-popover{position:absolute;right:0;top:46px;z-index:20;width:276px;padding:15px;background:white;border:1px solid #e3ebef;border-radius:12px;box-shadow:0 14px 40px #15304724;display:grid;gap:3px}.dash-filter-caption{padding:3px 10px 8px;color:#8aa0b0;font-size:11px;font-weight:700;letter-spacing:.08em}.dash-filter-popover>button:not(.dash-apply){padding:10px;border:0;border-radius:7px;background:#fff;text-align:left;color:#60798c;cursor:pointer;font:500 14px 'Work Sans',sans-serif}.dash-filter-popover>button.active{background:var(--violet-soft);color:var(--violet)}.dash-custom-dates{display:grid;gap:8px;margin-top:8px}.dash-custom-dates label{display:grid;gap:4px;color:#60798c;font-size:12px}.dash-custom-dates input{min-width:0;width:100%;padding:9px;border:1px solid #dfe9ef;border-radius:7px;color:#153047;box-sizing:border-box}.dash-filter-popover .dash-apply{justify-self:end;margin-top:8px;padding:10px 15px;border:0;border-radius:7px;background:var(--violet);color:#fff;cursor:pointer}.dash-apply:disabled{opacity:.45;cursor:not-allowed}.dash-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:14px;background:#f2f5f7;border-radius:10px}.dash-metrics>div{display:flex;flex-direction:column;gap:4px;min-height:91px;padding:13px 15px;background:#fff;border-radius:8px}.dash-metrics span,.dash-panel-head>span{font-size:12px;color:#90a5b5}.dash-metrics strong{font-size:25px;line-height:1.1;font-weight:600;color:#153047}.dash-metrics small{font-size:11px;color:#73a395}.dash-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.dash-panel{min-width:0;background:#fff;border:1px solid #e1eaf0;border-radius:9px;padding:17px}.dash-panel-head{justify-content:space-between;gap:10px}.dash-panel-head h2{margin:0;font-size:16px;font-weight:600;color:#17334b}.dash-panel-head p{margin:5px 0 0;font-size:12px;color:#91a6b5}.dash-breakdown-body{justify-content:space-between;gap:20px;min-height:190px}.dash-legend{flex:1;min-width:0;display:grid;gap:11px}.dash-legend>div{gap:8px;min-width:0;font-size:13px}.dash-legend i{width:9px;height:9px;flex:none;border-radius:50%}.dash-legend span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dash-legend strong{margin-left:auto;font-weight:500;color:#6f879a}.dash-donut{width:142px;height:142px;flex:none;border-radius:50%;display:grid;place-items:center}.dash-donut>div{width:72px;height:72px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column}.dash-donut strong{font-size:22px}.dash-donut span{font-size:10px;color:#8aa0b0}.dash-device-list{display:grid;gap:11px;margin-top:20px}.dash-device-list>div{gap:14px;font-size:13px}.dash-device-list span{width:26%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dash-device-list strong{width:30px;text-align:right;font-weight:500;color:#6f879a}.dash-bar-track{flex:1;height:17px;background:#f3f6f8;border-radius:5px;overflow:hidden}.dash-bar-track i{display:block;height:100%;border-radius:5px}.dash-empty{padding:32px 0;margin:0;color:#90a5b5;text-align:center;font-size:13px}.dash-activity{display:grid;gap:16px}.dash-line-chart{display:flex;gap:12px;height:180px;padding:12px 4px}.dash-y-axis{display:flex;flex-direction:column;justify-content:space-between;color:#90a5b5;font-size:11px}.dash-line-main{flex:1;position:relative;background:repeating-linear-gradient(to bottom,#eaf0f4 0,#eaf0f4 1px,transparent 1px,transparent 50%)}.dash-line-main svg{width:100%;height:calc(100% - 20px);overflow:visible}.dash-x-axis{display:flex;justify-content:space-between;color:#90a5b5;font-size:11px}.dash-day-list{display:flex;flex-wrap:wrap;gap:7px}.dash-day-list button{justify-content:space-between;gap:14px;min-width:110px;padding:9px 11px;background:#fff;border:1px solid #dfe9ef;border-radius:7px;color:#6a8396;cursor:pointer}.dash-day-list button.active{background:var(--violet-soft);border-color:#d9cdf7;color:var(--violet)}.dash-day-list strong{color:#153047}.dash-day-detail{border:1px solid #e1eaf0;border-radius:8px;padding:14px}.dash-day-detail h3{margin:0 0 8px;font-size:14px;font-weight:600;text-transform:capitalize}.dash-day-detail button{width:100%;gap:10px;padding:12px 4px;border:0;border-top:1px solid #edf2f5;background:#fff;text-align:left;cursor:pointer;color:#6a8396;font:400 12px 'Work Sans',sans-serif}.dash-day-detail button:hover{background:var(--violet-wash)}.dash-day-detail button strong{min-width:95px;color:#153047}.dash-day-detail button span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dash-day-detail button em{font-style:normal;color:var(--violet)}.dash-day-detail button small{color:#90a5b5}.dash-day-detail .dash-empty{padding:18px 0}@media(max-width:1050px){.dash-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.dash-chart-grid{grid-template-columns:1fr}}@media(max-width:650px){.dash-toolbar{align-items:flex-start;flex-direction:column}.dash-toolbar>div{align-self:flex-end}.dash-metrics{gap:8px;padding:8px}.dash-metrics>div{padding:10px;min-height:75px}.dash-metrics strong{font-size:20px}.dash-breakdown-body{gap:8px}.dash-donut{width:110px;height:110px}.dash-donut>div{width:58px;height:58px}.dash-device-list span{width:36%}.dash-day-detail button{flex-wrap:wrap}.dash-day-detail button span{flex-basis:35%}}
+
+
+/* Overview cards: compact tiles with a light graph and a distinct accent for each metric. */
+.intech-dashboard .dash-toolbar {
+  justify-content: flex-end;
+}
+.intech-dashboard .dash-metrics {
+  gap: 14px;
+  padding: 16px;
+  background: #f3f5f8;
+  border-radius: 10px;
+}
+.intech-dashboard .dash-metrics .dash-stat {
+  min-height: 108px;
+  gap: 0;
+  padding: 13px 14px 12px;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px #24344c08;
+}
+.intech-dashboard .dash-stat > span {
+  color: #8ba0b0;
+  font-size: 12px;
+  line-height: 18px;
+}
+.intech-dashboard .dash-stat-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 3px 0 8px;
+}
+.intech-dashboard .dash-stat-main strong {
+  font-size: 25px;
+  font-weight: 600;
+  color: #18334a;
+  letter-spacing: -.04em;
+}
+.intech-dashboard .dash-stat-main svg {
+  width: 62px;
+  height: 34px;
+  flex: none;
+  overflow: visible;
+}
+.intech-dashboard .dash-stat-main path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.intech-dashboard .dash-stat small {
+  align-self: flex-start;
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+}
+.intech-dashboard .dash-stat-violet { color: #7657dc; }
+.intech-dashboard .dash-stat-violet small { color: #6546c4; background: #f0eafd; }
+.intech-dashboard .dash-stat-amber { color: #e9a136; }
+.intech-dashboard .dash-stat-amber small { color: #a66b19; background: #fff1d9; }
+.intech-dashboard .dash-stat-teal { color: #36bca7; }
+.intech-dashboard .dash-stat-teal small { color: #248975; background: #dcf5ee; }
+.intech-dashboard .dash-stat-rose { color: #d974aa; }
+.intech-dashboard .dash-stat-rose small { color: #ad5482; background: #fae6f1; }
+@media (max-width: 650px) {
+  .intech-dashboard .dash-metrics { gap: 8px; padding: 8px; }
+  .intech-dashboard .dash-metrics .dash-stat { padding: 10px; min-height: 100px; }
+  .intech-dashboard .dash-stat-main strong { font-size: 21px; }
+  .intech-dashboard .dash-stat-main svg { width: 42px; }
+}

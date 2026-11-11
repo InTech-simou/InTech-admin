@@ -1,0 +1,70 @@
+/* Keep the header with the content; collapse the sidebar to an icon rail. */
+.topbar {
+  width: 100%;
+  margin-left: 0;
+  z-index: 30;
+}
+.sidebar {
+  top: 0;
+  bottom: 0;
+}
+.sidebar-toggle{width:38px;height:38px;flex:none;display:grid;place-items:center;margin:0 0 16px 4px;border:0;border-radius:9px;background:#f8f7fb;color:#686279}
+.sidebar-toggle:hover{background:var(--violet-soft);color:var(--violet)}
+.sidebar.is-collapsed{width:72px;padding-right:9px;padding-left:9px}
+.main-column.is-collapsed{margin-left:72px}
+.sidebar.is-collapsed .sidebar-toggle{margin-left:auto;margin-right:auto}
+.sidebar.is-collapsed .side-nav{padding-right:0;scrollbar-width:none}
+.sidebar.is-collapsed .side-nav::-webkit-scrollbar{display:none}
+.sidebar.is-collapsed .nav-group>p,.sidebar.is-collapsed .nav-group button span,.sidebar.is-collapsed .bottom-link span{display:none}
+.sidebar.is-collapsed .nav-group{margin:0 0 12px}
+.sidebar.is-collapsed .nav-group+.nav-group{padding-top:12px;border-top:1px solid var(--border)}
+.sidebar.is-collapsed .nav-group>button,.sidebar.is-collapsed .bottom-link{width:42px;height:42px;justify-content:center;margin:2px auto;padding:0}
+.sidebar.is-collapsed .nav-group>button svg,.sidebar.is-collapsed .bottom-link svg{flex:none}
+.sidebar.is-collapsed .side-bottom{border-top:1px solid var(--border);padding-top:10px}
+.topbar-brand {
+  height: auto;
+  gap: 10px;
+  padding: 0;
+  font: var(--type-h700);
+  letter-spacing: -.6px;
+}
+.topbar-brand .brand-mark {
+  width: 32px;
+  height: 32px;
+}
+.top-account-trigger { gap: 9px; }
+.top-account-label {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  text-align: right;
+}
+.top-account-label b {
+  max-width: 160px;
+  overflow: hidden;
+  color: #454156;
+  font: var(--type-heading-200);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.top-account-label small {
+  color: #938ea1;
+  font: var(--type-heading-100);
+}
+
+@media (max-width: 650px) {
+  .sidebar,.sidebar.is-collapsed{width:min(290px,84vw);padding-right:15px;padding-left:15px}
+  .main-column.is-collapsed{margin-left:0}
+  .sidebar.is-collapsed .nav-group>p{display:block}
+  .sidebar.is-collapsed .nav-group button span,.sidebar.is-collapsed .bottom-link span{display:initial}
+  .sidebar.is-collapsed .nav-group{margin:9px 0 17px}
+  .sidebar.is-collapsed .nav-group+.nav-group{padding-top:0;border-top:0}
+  .sidebar.is-collapsed .nav-group>button,.sidebar.is-collapsed .bottom-link{width:100%;height:37px;justify-content:flex-start;margin:2px 0;padding:0 10px}
+  .sidebar.is-collapsed .side-nav{padding-right:3px;scrollbar-width:thin}
+  .sidebar.is-collapsed .side-bottom{border-top:0;padding-top:0}
+  .topbar-brand { gap: 7px; font: var(--type-h600); }
+  .topbar-brand .brand-mark { width: 28px; height: 28px; }
+  .top-account-label { display: none; }
+}

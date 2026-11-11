@@ -1,0 +1,21 @@
+/* Let data tables use the content width; pagination controls the row count. */
+.data-table-panel .table-wrap { max-width: 100%; overflow-x: auto; }
+.data-table-panel table { width: 100%; min-width: 0; table-layout: fixed; }
+.data-table-panel th, .data-table-panel td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.data-table-panel th { padding-right: 8px; padding-left: 8px; }
+.data-table-panel td { height: 50px; padding-right: 8px; padding-left: 8px; }
+.data-table-panel td.table-row-actions { display: table-cell; text-align: center; }
+.data-table-panel .table-row-actions-heading { width: 58px; }
+.data-table-panel .table-pagination { min-height: 49px; }
+@media (max-width: 760px) {
+  .data-table-panel table { min-width: 680px; }
+}
+
+.page-heading-tools { gap: 6px; }
+.page-search { width: 225px; height: 40px; }
+.page-search input { min-width: 0; font: var(--type-paragraph-200); text-overflow: ellipsis; }
+.heading-create-button { width: 112px; height: 40px !important; padding: 0 10px !important; font: var(--type-h400) !important; }
+.page-heading h1 { font: var(--type-h800); }
+@media (max-width: 650px) {
+  .page-search { width: auto; flex: 1; }
+}

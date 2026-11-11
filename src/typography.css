@@ -1,0 +1,74 @@
+/* Digipay typography scale, applied with the existing Work Sans family. */
+:root {
+  --type-h900: 600 32px/40px 'Work Sans', sans-serif;
+  --type-h800: 600 24px/32px 'Work Sans', sans-serif;
+  --type-h700: 600 20px/24px 'Work Sans', sans-serif;
+  --type-h600: 600 18px/24px 'Work Sans', sans-serif;
+  --type-h500: 600 16px/24px 'Work Sans', sans-serif;
+  --type-h400: 500 14px/24px 'Work Sans', sans-serif;
+  --type-h300: 500 12px/16px 'Work Sans', sans-serif;
+  --type-heading-200: 600 12px/16px 'Work Sans', sans-serif;
+  --type-heading-100: 500 10px/16px 'Work Sans', sans-serif;
+  --type-paragraph-300: 400 16px/24px 'Work Sans', sans-serif;
+  --type-paragraph-200: 400 14px/20px 'Work Sans', sans-serif;
+  --type-paragraph-100: 400 12px/16px 'Work Sans', sans-serif;
+}
+
+.type-h900 { font: var(--type-h900); }
+.type-h800 { font: var(--type-h800); }
+.type-h700 { font: var(--type-h700); }
+.type-h600 { font: var(--type-h600); }
+.type-h500 { font: var(--type-h500); }
+.type-h400 { font: var(--type-h400); }
+.type-h300 { font: var(--type-h300); }
+.type-heading-200 { font: var(--type-heading-200); }
+.type-heading-100 { font: var(--type-heading-100); }
+.type-paragraph-300 { font: var(--type-paragraph-300); }
+.type-paragraph-200 { font: var(--type-paragraph-200); }
+.type-paragraph-100 { font: var(--type-paragraph-100); }
+
+body { font: var(--type-paragraph-200); }
+.page-heading h1, .auth-page .api-login-card h2 { font: var(--type-h800); letter-spacing: -.5px; }
+.login-visual-copy h1 { font: var(--type-h900); letter-spacing: -.7px; }
+.page-heading p, .panel-head p, .login-visual-copy p, .auth-page .api-login-card > p { font: var(--type-paragraph-200); }
+.panel-head h2, .request-head h2, .notification-head h2 { font: var(--type-h600); letter-spacing: -.2px; }
+.mutation-head h2, .drawer-head h2, .technician-profile-top h2 { font: var(--type-h700); }
+.request-detail-hero h2, .technician-profile-identity h3 { font: var(--type-h600); }
+.request-detail-section-head h3, .profile-section-title h3, .technician-profile-section h4 { font: var(--type-h500); }
+
+.nav-group > button, .bottom-link, .top-left, .top-account-menu > button { font: var(--type-paragraph-100); }
+.nav-group > button.active, .bottom-link.active { font-weight: 600; }
+.nav-group > p, .eyebrow, .login-kicker, .login-form-mark, .technician-profile-kicker { font: var(--type-heading-100); letter-spacing: 1px; }
+.top-account-identity b, .metric-top, .data-table-toolbar p, .pagination-summary, .pagination-buttons, .table-foot, .notification-head p { font: var(--type-paragraph-100); }
+.top-account-identity small, .metric-detail, .request-detail-footnote, .technician-profile-created { font: var(--type-paragraph-100); }
+
+.button, .link-button, .heading-create-button, .table-action-menu > button, .table-action-custom .request-assignment-menu-item, .table-action-custom .table-inline-action, .mark-all-read, .notification-refresh, .auth-page .api-login-card .button { font: var(--type-heading-200); }
+.page-search input, .global-search input, .request-tech-search input, .auth-page .api-login-card input { font: var(--type-paragraph-200); }
+.metric-value { font: var(--type-h800); }
+.table-count, .nav-count, .status, .request-status, .technician-profile-status, .table-service-pill { font: var(--type-heading-100); }
+
+th, .table-row-actions-heading { font: var(--type-heading-200); letter-spacing: .3px; }
+td, td > b, .request-ref > b, .date-cell, .pagination-summary select { font: var(--type-paragraph-100); }
+td > b, .request-ref > b { font-weight: 600; }
+td > small, .table-pagination, .table-empty, .readonly-foot { font: var(--type-paragraph-100); }
+th { height: 42px; }
+td { height: 56px; }
+.data-table-toolbar p { margin-top: 0; }
+
+.mutation-field, .mutation-checkbox, .auth-page .api-login-card > label { font: var(--type-heading-200); }
+.mutation-field input, .mutation-field select, .mutation-field textarea { font: var(--type-paragraph-200); }
+.mutation-field small, .mutation-warning, .api-error, .api-error-state p { font: var(--type-paragraph-100); }
+.api-setting-grid span, .profile-detail > span, .request-detail-value > span, .technician-profile-contact span, .technician-profile-facts span { font: var(--type-paragraph-100); }
+.api-setting-grid b, .profile-detail > b, .request-detail-value > b, .technician-profile-contact a, .technician-profile-facts b { font: var(--type-paragraph-200); }
+
+.request-detail-hero > p, .request-detail-paragraph, .request-timeline p, .request-next-step p, .technician-profile-identity p { font: var(--type-paragraph-100); }
+.request-timeline b, .request-detail-contact, .technician-profile-tags span, .request-problem-tags span { font: var(--type-heading-200); }
+.notification-copy b, .notification-empty b, .app-toast strong { font: var(--type-heading-200); }
+.notification-copy span, .notification-empty, .app-toast p, .notification-error { font: var(--type-paragraph-100); }
+.notification-copy small, .notification-foot { font: var(--type-heading-100); }
+
+@media (max-width: 650px) {
+  .page-heading h1 { font: var(--type-h700); }
+  .panel-head h2, .request-head h2 { font: var(--type-h500); }
+  .page-heading p { font: var(--type-paragraph-100); }
+}
