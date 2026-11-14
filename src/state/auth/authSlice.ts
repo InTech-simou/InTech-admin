@@ -11,18 +11,19 @@ interface AuthState {
 }
 
 const configuredBase = normalizeApiBase(API_BASE_URL);
+const hasConfiguredApi = Boolean(API_BASE_URL.trim());
 const requestBase = import.meta.env.DEV ? '' : configuredBase;
 
 const initialState: AuthState = {
   session: null,
-  checking: Boolean(getSavedToken() && configuredBase),
+  checking: Boolean(getSavedToken() && hasConfiguredApi),
   loginLoading: false,
   loginError: '',
 };
 
 export const restoreSession = createAsyncThunk<ApiSession | null>('auth/restoreSession', async () => {
   const token = getSavedToken();
-  if (!token || !configuredBase) return null;
+  if (!token || !hasConfiguredApi) return null;
   try {
     const profile = await apiRequest<{ user: AdminUser }>(requestBase, token, '/admin/me');
     return { base: requestBase, token, user: profile.user };
@@ -36,7 +37,7 @@ export const loginAdmin = createAsyncThunk<ApiSession, { email: string; password
   'auth/login',
   async ({ email, password }, { rejectWithValue }) => {
     try {
-      if (!configuredBase) throw new Error('API non configurée. Définissez VITE_API_BASE_URL dans .env.local puis redémarrez Vite.');
+      if (!hasConfiguredApi) throw new Error('API non configurée. Définissez VITE_API_BASE_URL dans .env.local puis redémarrez Vite.');
       const auth = await apiRequest<{ token?: string; user?: AdminUser }>(requestBase, null, '/admin/login', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
